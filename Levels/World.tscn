@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Levels/NPC_Changer.gd" type="Script" id=2]
+
+[sub_resource type="Theme" id=1]
+
+[node name="World" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="NPCButtonCAT" type="ToolButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 78.0
+margin_top = 509.0
+margin_right = 529.0
+margin_bottom = 995.0
+theme = SubResource( 1 )
+icon = ExtResource( 1 )
+icon_align = 1
+expand_icon = true
+
+[node name="NPCButtonCOW" type="ToolButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 739.0
+margin_top = 541.0
+margin_right = 1202.0
+margin_bottom = 972.0
+icon = ExtResource( 1 )
+expand_icon = true
+
+[node name="NPCButtonWOLF" type="ToolButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 1338.0
+margin_top = 542.0
+margin_right = 1782.0
+margin_bottom = 965.0
+icon = ExtResource( 1 )
+expand_icon = true
+
+[connection signal="pressed" from="NPCButtonCAT" to="." method="_on_NPCButtonCAT_pressed"]
+[connection signal="pressed" from="NPCButtonCOW" to="." method="_on_NPCButtonCOW_pressed"]
+[connection signal="pressed" from="NPCButtonWOLF" to="." method="_on_NPCButtonWOLF_pressed"]
