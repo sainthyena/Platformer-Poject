@@ -32,6 +32,7 @@ animations = [ {
 
 [node name="NPC_Animation_Player" type="CanvasLayer"]
 pause_mode = 2
+layer = 10
 visible = false
 script = ExtResource( 4 )
 

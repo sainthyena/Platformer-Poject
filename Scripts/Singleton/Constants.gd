@@ -1,0 +1,28 @@
+extends Node
+
+var SPEED = 400
+var JUMP_TIME = 3
+
+const HALT_SPEED = 0.325
+const MAX_SPEED = 750.0
+
+var JUMP_ACCELERATION = 10
+
+
+const GRAVITY = 200
+const MAX_JUMP_HEIGHT = 200
+const MAX_JUMP_TIME = 0
+const MAX_JUMP_FORGIVENESS_TIME = 0.5
+
+
+#const GRAVITY = 9
+#const SPEED = 20
+#const MAX_SPEED = 400
+#const HALT_SPEED = 0.325
+#const JUMP_HEIGHT = 500
+#const MAX_JUMP = 725.0
+#const MAX_JUMP_TIME = 1
+#const MAX_JUMP_FORGIVENESS_TIME = 0.5
+#
+#const HALT_SPEED = 0.325
+#const MAX_SPEED = 750.0
